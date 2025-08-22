@@ -1,0 +1,36 @@
+# CODEOWNERS file for auth-store-409
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-cache @Armor-test/unit-cloud @Armor-test/squad-ml
+
+# Directory ownership
+/auth/ @Armor-test/grp-integration @Armor-test/dept-release @Armor-test/dept-automation
+/internal/ @Armor-test/dept-billing @Armor-test/unit-test @Armor-test/dept-security
+/ui/ @Armor-test/dept-test @Armor-test/squad-mobile
+/helpers/ @Armor-test/dept-automation @Armor-test/squad-apps @Armor-test/squad-database
+/models/ @Armor-test/unit-governance @Armor-test/dept-automation @Armor-test/unit-cloud
+/security/ @Armor-test/dept-identity @Armor-test/team-logging
+/dist/ @Armor-test/dept-automation @Armor-test/squad-cache
+/data/ @Armor-test/dept-ui @Armor-test/unit-test
+/vendor/ @Armor-test/dept-reporting @Armor-test/dept-ui @Armor-test/squad-product
+/modules/ @Armor-test/squad-cache @Armor-test/dept-identity @Armor-test/squad-reporting
+
+# File type ownership
+*.sql @Armor-test/dept-test @Armor-test/squad-mobile
+*.toml @Armor-test/squad-ux @Armor-test/squad-frontend @Armor-test/grp-search
+*.sh @Armor-test/squad-search @Armor-test/team-governance
+*.kt @Armor-test/team-logging @Armor-test/unit-governance
+*.yml @Armor-test/squad-cloud @Armor-test/dept-test
+*.tsx @Armor-test/dept-ui @Armor-test/team-reporting
+*.ts @Armor-test/dept-data @Armor-test/grp-search @Armor-test/squad-apps
+*.proto @Armor-test/squad-cache @Armor-test/dept-ui
+*.xml @Armor-test/dept-billing @Armor-test/dept-logging
+*.cs @Armor-test/dept-security @Armor-test/squad-performance
+*.py @Armor-test/dept-reporting @Armor-test/team-governance
+*.tf @Armor-test/dept-reliability @Armor-test/unit-design @Armor-test/squad-mobile
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
